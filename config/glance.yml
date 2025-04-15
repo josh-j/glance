@@ -19,14 +19,14 @@ define:
   - &subreddit-settings
     type: reddit
     collapse-after: 5
-    cache: 6h
+    cache: 3h
     show-thumbnails: true
     proxy: http://100.113.87.8:8888
 
   - &rss-settings
     type: rss
     style: detailed-list
-    cache: 6h
+    cache: 3h
     collapse-after: 5
     limit: 20
     single-line-titles: false
@@ -35,7 +35,7 @@ define:
     proxy: http://100.113.87.8:8888
 
   - &feed-settings
-    cache: 6h
+    cache: 3h
     hide-categories: true
     hide-description: true
 
