@@ -1,0 +1,28 @@
+.list-horizontal-text {
+    display: none;
+}
+.rss-detailed-thumbnail > * {
+    aspect-ratio: 3 / 2;
+    height: 4.1rem;
+    /* width: 6rem; */
+}
+.cards-grid {
+    font-size: 1.0rem;
+}
+
+.padding-inline-widget {
+    padding-inline: 2px;
+}
+.margin-bottom-widget {
+    margin-bottom: 2px;
+}
+
+/* Target the img tag inside the specific container structure */
+.widget-type-rss .widget-slashdot img {
+  display: inline-block; /* Or 'block' if it should take full width */
+  aspect-ratio: 3 / 2;
+  height: 4.1rem; /* <<-- REPLACE with your desired height */
+  content: url('https://icons.iconarchive.com/icons/danleech/simple/256/slashdot-icon.png'); /* <<-- REPLACE with your image path */
+  /* 4. Optional: Control how the new image fits */
+  object-fit: cover; /* Adjust if needed (contain, fill, etc.) */
+}

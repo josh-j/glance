@@ -1,0 +1,47 @@
+server:
+  assets-path: /app/assets
+
+theme:
+  # background-color: 50 1 6
+  # primary-color: 51 33 68
+  # negative-color: 209 88 54
+
+  light: true
+  background-color: 0 0 95
+  primary-color: 0 0 10
+  negative-color: 0 90 50
+  # Note: assets are cached by the browser, changes to the CSS file
+  # will not be reflected until the browser cache is cleared (Ctrl+F5)
+  custom-css-file: /assets/user.css
+
+
+define:
+  - &subreddit-settings
+    type: reddit
+    collapse-after: 5
+    cache: 6h
+    show-thumbnails: true
+    proxy: http://100.113.87.8:8888
+
+  - &rss-settings
+    type: rss
+    style: detailed-list
+    cache: 6h
+    collapse-after: 5
+    limit: 20
+    single-line-titles: false
+    thumbnail-height: 5
+    card-height: 20
+    proxy: http://100.113.87.8:8888
+
+  - &feed-settings
+    cache: 6h
+    hide-categories: true
+    hide-description: true
+
+pages:
+  # It's not necessary to create a new file for each page and include it, you can simply
+  # put its contents here, though multiple pages are easier to manage when separated
+  !include: home.yml
+  !include: markets.yml
+

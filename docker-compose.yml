@@ -1,0 +1,40 @@
+networks:
+  traefik-network:
+    external: true
+  glance-network:
+    driver: bridge
+
+services:
+  glance:
+    container_name: glance
+    image: glanceapp/glance
+    restart: unless-stopped
+    volumes:
+      - ./config:/app/config
+      - ./assets:/app/assets
+      # Optionally, also mount docker socket if you want to use the docker containers widget
+      # - /var/run/docker.sock:/var/run/docker.sock:ro
+    # ports:
+    #   - 8080:8080
+    # env_file: .env
+
+    expose:
+      - "8080"
+    networks:
+      - traefik-network
+      - glance-network
+    labels:
+      - "traefik.enable=true"
+      - "traefik.docker.network=traefik-network"
+      - "traefik.http.routers.glance.rule=Host(`home.joshej.dev`)"
+      - "traefik.http.routers.glance.entrypoints=websecure"
+      - "traefik.http.routers.glance.tls.certresolver=letsencrypt"
+      - "traefik.http.services.glance-service.loadbalancer.server.port=8080"
+
+      - "traefik.http.routers.glance-ip.rule=HostRegexp(`{ip:.*}`)"
+      - "traefik.http.routers.glance-ip.entrypoints=glance"
+      - "traefik.http.routers.glance-ip.tls=true"
+      - "traefik.http.routers.glance-ip.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.glance-ip.service=glance-service"
+
+      - "com.centurylinklabs.watchtower.scope=wtseen"

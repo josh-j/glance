@@ -1,0 +1,135 @@
+- name: Home
+  width: wide
+  columns:
+    - size: full
+      widgets:
+        - type: split-column
+          max-columns: 3
+          widgets:
+            - subreddit: news
+              <<: *subreddit-settings
+            - type: hacker-news
+              collapse-after: 8
+            - title: Marginal Revolution
+              feeds:
+                - url: https://www.marginalrevolution.com/feed
+                  <<: *feed-settings
+              <<: *rss-settings
+
+            - title: Blogs
+              feeds:
+                - url: http://astralcodexten.substack.com/feed
+                  <<: *feed-settings
+                - url: https://thezvi.wordpress.com/feed/
+                  <<: *feed-settings
+                - url: https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine.rss
+                  <<: *feed-settings
+                - url: https://www.overcomingbias.com/feed
+                  <<: *feed-settings
+              <<: *rss-settings
+
+            - title: Slashdot
+              feeds:
+                - url: https://rss.slashdot.org/Slashdot/slashdot
+                  <<: *feed-settings
+              css-class: widget-slashdot
+              <<: *rss-settings
+
+            - title: Lesswrong (Curated)
+              style: detailed-list
+              feeds:
+                - url: https://www.lesswrong.com/feed.xml?view=curated-rss
+                  headers:
+                    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+                  <<: *feed-settings
+              <<: *rss-settings
+
+
+            - title: Lesswrong (Frontpage)
+              style: detailed-list
+              feeds:
+                - url: https://www.lesswrong.com/feed.xml?view=frontpage-rss&karmaThreshold=75
+                  headers:
+                    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+                  <<: *feed-settings
+              <<: *rss-settings
+            
+            # - title: Ars Technica
+            #   style: detailed-list
+            #   feeds:
+            #     - url: https://feeds.arstechnica.com/arstechnica/index
+            #       <<: *feed-settings
+            #   <<: *rss-settings
+
+            - subreddit: science
+              <<: *subreddit-settings
+            - subreddit: technology
+              <<: *subreddit-settings
+            - subreddit: foodforthought
+              <<: *subreddit-settings
+            - subreddit: worldnews
+              <<: *subreddit-settings
+            - subreddit: economics
+              <<: *subreddit-settings
+            - subreddit: slatestarcodex
+              <<: *subreddit-settings
+            - subreddit: truereddit
+              <<: *subreddit-settings
+            - subreddit: wikipedia
+              <<: *subreddit-settings
+            # - subreddit: selfhosted
+            #   <<: *subreddit-settings
+            # - subreddit: homelab
+            #   <<: *subreddit-settings
+            # - subreddit: linux
+            #   <<: *subreddit-settings
+            # - subreddit: sysadmin
+            #   <<: *subreddit-settings
+            # - subreddit: DevOps
+            #   <<: *subreddit-settings
+            # - subreddit: Networking
+            #   <<: *subreddit-settings
+
+    - size: small
+      widgets:
+        - type: weather
+          location: Homburg, Germany
+          units: imperial
+          hide-location: true
+          show-area-name: false
+
+        - type: markets
+          markets:
+            - symbol: SPY
+              name: S&P 500
+            - symbol: NVDA
+              name: NVIDIA
+            - symbol: EUR=X
+              name: USD/EUR
+        - type: videos # Corrected indentation for list item
+          style: grid-cards
+          collapse-after: 40
+          collapse-after-rows: 10
+          channels:
+            - UCsXVk37bltHxD1rDPwtNM8Q # Kurzgesagt
+            - UCHnyfMqiRRG1u-2MsSQLbXA # Veritasium
+            - UCnxuOd8obvLLtf5_-YKFbiQ # Ezra Klein Show
+            - UCQlJ7XpBtiMLKNSd4RAJmRQ # Weekly Show Podcast
+            - UCVYamHliCI9rw1tHR1xbkfw # Dave2D
+            - UC8URMa1fI4rlaLc-Lhev2fQ # Ryan McBeth
+            - UCdWIQh9DGG6uhJk8eyIFl1w # Curt Jaimungal
+            - UCR-DXc1voovS8nhAvccRZhg # Jeff Geerling
+            - UCv6J_jJa8GJqFwQNgNrMuww # ServeTheHome
+            - UCOk-gHyjcWZNj3Br4oxwh0A # Techno Tim
+            - UCYE2gcN4wWewmriAP2QlT2A # John Capobianco
+            - UC1yNl2E66ZzKApQdRuTQ4tw # Sabine
+            - UCQd9wpBDkfQxqxGIBko2fKg # GosuCoder
+            - UC5_6ZD6s8klmMu9TXEB_1IA # CodeEmporium
+            - UCZNhwA1B5YqiY1nLzmM0ZRg # Christian Lempa
+            - UCXUPKJO5MZQN11PqgIvyuvQ # Andrew Karpathy
+            - UCNzszbnvQeFzObW0ghk0Ckw # Dave's Garage
+            - UCYO_jab_esuFRV4b17AJtAw # 3Blue1Brown
+            - UCXl4i9dYBrFOabk0xGmbkRA # Dwarkesh Patel
+            - UCzPk3Dj63B6PIEifvVvDfBg # Hexdump
+            - UC6107grRI4m0o2-emgoDnAA # SmarterEveryDay
+            - UCsBjURrPoezykLs9EqgamOA # Fireship
