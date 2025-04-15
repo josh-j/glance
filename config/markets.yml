@@ -9,6 +9,8 @@
               name: S&P 500
             - symbol: DX-Y.NYB
               name: Dollar Index
+            - symbol: EUR=X
+              name: USD/EUR
 
         - type: markets
           title: Crypto
