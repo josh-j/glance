@@ -7,6 +7,7 @@
           style: grid-cards
           collapse-after: 120
           collapse-after-rows: 15
+          limit: 100
           channels:
             - UCsXVk37bltHxD1rDPwtNM8Q # Kurzgesagt
             - UCHnyfMqiRRG1u-2MsSQLbXA # Veritasium
