@@ -27,7 +27,7 @@ define:
     type: rss
     style: detailed-list
     cache: 3h
-    collapse-after: 5
+    collapse-after: 8
     limit: 20
     single-line-titles: false
     thumbnail-height: 5
