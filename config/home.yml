@@ -10,9 +10,9 @@
               <<: *subreddit-settings
             - type: hacker-news
               collapse-after: 15
-              - type: lobsters
-                sort-by: hot
-                limit: 15
+            - type: lobsters
+              sort-by: hot
+              limit: 15
               collapse-after: 15
             - title: Marginal Revolution
               feeds:
