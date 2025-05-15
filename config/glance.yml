@@ -38,16 +38,17 @@ theme:
 define:
   - &subreddit-settings
     type: reddit
-    collapse-after: 15
+    collapse-after: 10
     cache: 3h
-    show-thumbnails: false
+    show-thumbnails: true
+    show-flairs: true
     proxy: http://100.113.87.8:8888
 
   - &rss-settings
     type: rss
     style: vertical-list
     cache: 3h
-    collapse-after: 15
+    collapse-after: 10
     limit: 20
     single-line-titles: false
     thumbnail-height: 5
