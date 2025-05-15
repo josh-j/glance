@@ -42,6 +42,13 @@ theme:
       positive-color: 105 48 72
       negative-color: 351 74 73
 
+    dracula:
+      background-color: 231 15 21
+      primary-color: 265 89 79
+      contrast-multiplier: 1.2
+      positive-color: 135 94 66
+      negative-color: 0 100 67
+
 define:
   - &subreddit-settings
     type: reddit
