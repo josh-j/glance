@@ -1,5 +1,21 @@
 - name: Home
   width: wide
+  head-widgets:
+    - type: markets
+      hide-header: true
+      markets:
+        - symbol: SPY
+          name: S&P 500
+        - symbol: EUR=X
+          name: USD/EUR
+        - symbol: BTC-USD
+          name: Bitcoin
+        - symbol: NVDA
+          name: NVIDIA
+        - symbol: AAPL
+          name: Apple
+        - symbol: MSFT
+          name: Microsoft
   columns:
     - size: full
       widgets:
