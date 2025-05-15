@@ -50,7 +50,7 @@ define:
     cache: 3h
     collapse-after: 10
     limit: 20
-    single-line-titles: false
+    single-line-titles: true
     thumbnail-height: 5
     card-height: 20
     proxy: http://100.113.87.8:8888
