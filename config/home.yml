@@ -11,7 +11,7 @@
         - symbol: NVDA
           name: NVIDIA
     - type: to-do
-  
+      hide-header: true
   columns:
     - size: full
       widgets:
