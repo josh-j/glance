@@ -12,8 +12,6 @@
           name: Bitcoin
         - symbol: NVDA
           name: NVIDIA
-    - type: calendar
-      first-day-of-week: monday
     - type: to-do
   
   columns:
