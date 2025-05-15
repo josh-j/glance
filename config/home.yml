@@ -70,19 +70,19 @@
               <<: *subreddit-settings
     - size: small
       widgets:
-      - type: calendar
-        first-day-of-week: monday
-      - type: markets
-        hide-header: true
-        markets:
-          - symbol: SPY
-            name: S&P 500
-          - symbol: EUR=X
-            name: USD/EUR
-          - symbol: NVDA
-            name: NVIDIA
-      - type: to-do
-        hide-header: true
+        - type: calendar
+          first-day-of-week: monday
+        - type: markets
+          hide-header: true
+          markets:
+            - symbol: SPY
+              name: S&P 500
+            - symbol: EUR=X
+              name: USD/EUR
+            - symbol: NVDA
+              name: NVIDIA
+        - type: to-do
+          hide-header: true
         - type: videos # Corrected indentation for list item
           style: grid-cards
           collapse-after: 40
