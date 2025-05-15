@@ -34,6 +34,13 @@ theme:
       primary-color: 220 91 54
       positive-color: 109 58 40
       negative-color: 347 87 44
+      
+    catpuccin-macchiato:
+      background-color: 232 23 18
+      contrast-multiplier: 1.2
+      primary-color: 220 83 75
+      positive-color: 105 48 72
+      negative-color: 351 74 73
 
 define:
   - &subreddit-settings
@@ -58,7 +65,7 @@ define:
   - &feed-settings
     cache: 3h
     hide-categories: true
-    hide-description: true
+    hide-description: false
 
 pages:
   # It's not necessary to create a new file for each page and include it, you can simply
