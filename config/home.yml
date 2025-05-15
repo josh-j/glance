@@ -85,7 +85,7 @@
           hide-header: true
         - type: videos # Corrected indentation for list item
           style: grid-cards
-          collapse-after: 40
+          collapse-after: 120
           collapse-after-rows: 15
           limit: 100
           channels:
