@@ -80,36 +80,36 @@
               <<: *subreddit-settings
             - subreddit: wikipedia
               <<: *subreddit-settings
-            - size: small
-              widgets:
-                - type: videos # Corrected indentation for list item
-                  style: grid-cards
-                  collapse-after: 40
-                  collapse-after-rows: 15
-                  limit: 100
-                  channels:
-                    - UCsXVk37bltHxD1rDPwtNM8Q # Kurzgesagt
-                    - UCHnyfMqiRRG1u-2MsSQLbXA # Veritasium
-                    - UCnxuOd8obvLLtf5_-YKFbiQ # Ezra Klein Show
-                    - UCQlJ7XpBtiMLKNSd4RAJmRQ # Weekly Show Podcast
-                    - UCVYamHliCI9rw1tHR1xbkfw # Dave2D
-                    - UC8URMa1fI4rlaLc-Lhev2fQ # Ryan McBeth
-                    - UCdWIQh9DGG6uhJk8eyIFl1w # Curt Jaimungal
-                    - UCR-DXc1voovS8nhAvccRZhg # Jeff Geerling
-                    - UCv6J_jJa8GJqFwQNgNrMuww # ServeTheHome
-                    - UCOk-gHyjcWZNj3Br4oxwh0A # Techno Tim
-                    - UCYE2gcN4wWewmriAP2QlT2A # John Capobianco
-                    - UC1yNl2E66ZzKApQdRuTQ4tw # Sabine
-                    - UCQd9wpBDkfQxqxGIBko2fKg # GosuCoder
-                    - UC5_6ZD6s8klmMu9TXEB_1IA # CodeEmporium
-                    - UCZNhwA1B5YqiY1nLzmM0ZRg # Christian Lempa
-                    - UCXUPKJO5MZQN11PqgIvyuvQ # Andrew Karpathy
-                    - UCNzszbnvQeFzObW0ghk0Ckw # Dave's Garage
-                    - UCYO_jab_esuFRV4b17AJtAw # 3Blue1Brown
-                    - UCXl4i9dYBrFOabk0xGmbkRA # Dwarkesh Patel
-                    - UCzPk3Dj63B6PIEifvVvDfBg # Hexdump
-                    - UC6107grRI4m0o2-emgoDnAA # SmarterEveryDay
-                    - UCsBjURrPoezykLs9EqgamOA # Fireship
+          - size: small
+            widgets:
+              - type: videos # Corrected indentation for list item
+                style: grid-cards
+                collapse-after: 40
+                collapse-after-rows: 15
+                limit: 100
+                channels:
+                  - UCsXVk37bltHxD1rDPwtNM8Q # Kurzgesagt
+                  - UCHnyfMqiRRG1u-2MsSQLbXA # Veritasium
+                  - UCnxuOd8obvLLtf5_-YKFbiQ # Ezra Klein Show
+                  - UCQlJ7XpBtiMLKNSd4RAJmRQ # Weekly Show Podcast
+                  - UCVYamHliCI9rw1tHR1xbkfw # Dave2D
+                  - UC8URMa1fI4rlaLc-Lhev2fQ # Ryan McBeth
+                  - UCdWIQh9DGG6uhJk8eyIFl1w # Curt Jaimungal
+                  - UCR-DXc1voovS8nhAvccRZhg # Jeff Geerling
+                  - UCv6J_jJa8GJqFwQNgNrMuww # ServeTheHome
+                  - UCOk-gHyjcWZNj3Br4oxwh0A # Techno Tim
+                  - UCYE2gcN4wWewmriAP2QlT2A # John Capobianco
+                  - UC1yNl2E66ZzKApQdRuTQ4tw # Sabine
+                  - UCQd9wpBDkfQxqxGIBko2fKg # GosuCoder
+                  - UC5_6ZD6s8klmMu9TXEB_1IA # CodeEmporium
+                  - UCZNhwA1B5YqiY1nLzmM0ZRg # Christian Lempa
+                  - UCXUPKJO5MZQN11PqgIvyuvQ # Andrew Karpathy
+                  - UCNzszbnvQeFzObW0ghk0Ckw # Dave's Garage
+                  - UCYO_jab_esuFRV4b17AJtAw # 3Blue1Brown
+                  - UCXl4i9dYBrFOabk0xGmbkRA # Dwarkesh Patel
+                  - UCzPk3Dj63B6PIEifvVvDfBg # Hexdump
+                  - UC6107grRI4m0o2-emgoDnAA # SmarterEveryDay
+                  - UCsBjURrPoezykLs9EqgamOA # Fireship
             # - title: Ars Technica
             #   style: detailed-list
             #   feeds:
