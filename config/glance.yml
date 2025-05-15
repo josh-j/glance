@@ -45,7 +45,7 @@ theme:
     dracula:
       background-color: 231 15 21
       primary-color: 265 89 79
-      contrast-multiplier: 1.2
+      contrast-multiplier: 1.1
       positive-color: 135 94 66
       negative-color: 0 100 67
 
