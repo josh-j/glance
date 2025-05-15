@@ -8,8 +8,6 @@
           name: S&P 500
         - symbol: EUR=X
           name: USD/EUR
-        - symbol: BTC-USD
-          name: Bitcoin
         - symbol: NVDA
           name: NVIDIA
     - type: to-do
