@@ -12,10 +12,6 @@
           name: Bitcoin
         - symbol: NVDA
           name: NVIDIA
-        - symbol: AAPL
-          name: Apple
-        - symbol: MSFT
-          name: Microsoft
   columns:
     - size: full
       widgets:
