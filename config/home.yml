@@ -31,7 +31,6 @@
                 - url: https://www.marginalrevolution.com/feed
                   <<: *feed-settings
               <<: *rss-settings
-
             - title: Blogs
               feeds:
                 - url: http://astralcodexten.substack.com/feed
@@ -43,14 +42,12 @@
                 - url: https://www.overcomingbias.com/feed
                   <<: *feed-settings
               <<: *rss-settings
-
             - title: Slashdot
               feeds:
                 - url: https://rss.slashdot.org/Slashdot/slashdot
                   <<: *feed-settings
               css-class: widget-slashdot
               <<: *rss-settings
-
             - title: Lesswrong (Curated)
               style: detailed-list
               feeds:
@@ -59,8 +56,6 @@
                     User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
                   <<: *feed-settings
               <<: *rss-settings
-
-
             - title: Lesswrong (Frontpage)
               style: detailed-list
               feeds:
@@ -69,14 +64,6 @@
                     User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
                   <<: *feed-settings
               <<: *rss-settings
-
-            # - title: Ars Technica
-            #   style: detailed-list
-            #   feeds:
-            #     - url: https://feeds.arstechnica.com/arstechnica/index
-            #       <<: *feed-settings
-            #   <<: *rss-settings
-
             - subreddit: science
               <<: *subreddit-settings
             - subreddit: technology
@@ -93,6 +80,12 @@
               <<: *subreddit-settings
             - subreddit: wikipedia
               <<: *subreddit-settings
+            # - title: Ars Technica
+            #   style: detailed-list
+            #   feeds:
+            #     - url: https://feeds.arstechnica.com/arstechnica/index
+            #       <<: *feed-settings
+            #   <<: *rss-settings
             # - subreddit: selfhosted
             #   <<: *subreddit-settings
             # - subreddit: homelab
