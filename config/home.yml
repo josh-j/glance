@@ -9,7 +9,11 @@
             - subreddit: news
               <<: *subreddit-settings
             - type: hacker-news
-              collapse-after: 8
+              collapse-after: 15
+              - type: lobsters
+                sort-by: hot
+                limit: 15
+              collapse-after: 15
             - title: Marginal Revolution
               feeds:
                 - url: https://www.marginalrevolution.com/feed
