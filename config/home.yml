@@ -86,7 +86,7 @@
         - type: videos # Corrected indentation for list item
           style: grid-cards
           collapse-after: 120
-          collapse-after-rows: 15
+          collapse-after-rows: 30
           limit: 100
           channels:
             - UCsXVk37bltHxD1rDPwtNM8Q # Kurzgesagt
