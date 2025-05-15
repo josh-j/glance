@@ -42,6 +42,10 @@
                 - url: https://www.overcomingbias.com/feed
                   <<: *feed-settings
               <<: *rss-settings
+            - subreddit: science
+              <<: *subreddit-settings
+            - subreddit: foodforthought
+              <<: *subreddit-settings
             - title: Slashdot
               feeds:
                 - url: https://rss.slashdot.org/Slashdot/slashdot
@@ -49,7 +53,7 @@
               css-class: widget-slashdot
               <<: *rss-settings
             - title: Lesswrong (Curated)
-              style: detailed-list
+              style: vertical-list
               feeds:
                 - url: https://www.lesswrong.com/feed.xml?view=curated-rss
                   headers:
@@ -57,18 +61,14 @@
                   <<: *feed-settings
               <<: *rss-settings
             - title: Lesswrong (Frontpage)
-              style: detailed-list
+              style: vertical-list
               feeds:
                 - url: https://www.lesswrong.com/feed.xml?view=frontpage-rss&karmaThreshold=75
                   headers:
                     User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
                   <<: *feed-settings
               <<: *rss-settings
-            - subreddit: science
-              <<: *subreddit-settings
             - subreddit: technology
-              <<: *subreddit-settings
-            - subreddit: foodforthought
               <<: *subreddit-settings
             - subreddit: worldnews
               <<: *subreddit-settings
